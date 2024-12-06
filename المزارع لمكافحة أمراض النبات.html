@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزارع - مكافحة أمراض النبات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 1em;
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 2em;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        form input {
+            width: calc(100% - 2em);
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 0.7em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        .form-section {
+            margin-bottom: 3em;
+        }
+    </style>
+</head>
+<body>
+    <!-- رأس الموقع -->
+    <header>
+        <h1>المزارع لمكافحةأمراض النبات</h1>
+    </header>
+
+    <!-- قائمة التنقل -->
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#login">تسجيل الدخول</a>
+        <a href="#register">إنشاء حساب</a>
+        <a href="#about">عن الموقع</a>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <section id="about">
+            <h2>عن الموقع</h2>
+            <p>هذا الموقع مخصص لتقديم الدعم والنصائح للمزارعين لمكافحة أمراض النبات والحفاظ على المحاصيل الزراعية.</p>
+        </section>
+
+        <!-- نموذج تسجيل الدخول -->
+        <section id="login" class="form-section">
+            <h2>تسجيل الدخول</h2>
+            <form>
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" placeholder="ادخل اسم المستخدم">
+
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </section>
+
+        <!-- نموذج إنشاء حساب -->
+        <section id="register" class="form-section">
+            <h2>إنشاء حساب جديد</h2>
+            <form>
+                <label for="new-username">اسم المستخدم:</label>
+                <input type="text" id="new-username" name="new-username" placeholder="ادخل اسم المستخدم الجديد">
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="ادخل البريد الإلكتروني">
+
+                <label for="new-password">كلمة المرور:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="ادخل كلمة المرور">
+
+                <label for="confirm-password">تأكيد كلمة المرور:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="أعد إدخال كلمة المرور">
+
+                <button type="submit">إنشاء حساب</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- تذييل الموقع -->
+    <footer>
+        <p style="text-align: center; padding: 1em; background: #333; color: white;">
+            جميع الحقوق محفوظة &copy; 2024 | لدى موقع المزارع لمكافحة أمراض النبات
+        </p>
+    </footer>
+</body>
+</html>
